@@ -1,179 +1,121 @@
+🛒 E-Commerce Customer Spending Prediction
+⭐ Linear Regression Machine Learning Model · Kaggle Dataset · End-to-End Analysis
+<p align="center"> <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python"/> <img src="https://img.shields.io/badge/Scikit--Learn-ML%20Model-orange?logo=scikitlearn"/> <img src="https://img.shields.io/badge/Status-Completed-brightgreen"/> <img src="https://img.shields.io/badge/License-MIT-yellow"/> <img src="https://img.shields.io/badge/Made%20with-Love-red"/> </p>
+📌 Project Overview
 
-# 📊 E-Commerce Customer Spending Prediction
+This project builds a Linear Regression Machine Learning model that predicts Yearly Customer Spending using behavioral data from an e-commerce platform.
 
-### *A Machine Learning Project using Linear Regression*
+Using a Kaggle dataset, I performed:
 
-Welcome to my **E-Commerce Customer Spending Prediction Model**, a data-driven project built using a Kaggle dataset and implemented in Python.
-This project explores how user behavior on an e-commerce platform influences annual spending — and uses Linear Regression to *predict* future customer revenue with impressive accuracy.
+📊 Extensive Data Exploration
 
----
+⚙️ Feature Engineering
 
-## 🚀 Project Overview
+🤖 Model Training
 
-The goal of this project is to answer a business-critical question:
+🧪 Evaluation
 
-### **“How much will a customer spend annually based on their online behavior?”**
+📉 Insight Generation
 
-To do this, I used a **Kaggle E-commerce Customer Data** dataset that contains behavioral metrics like:
+The goal is to understand which user activities drive revenue and build a model capable of accurate predictions.
 
-* 🕒 *Average Session Length*
-* 📱 *Time on App*
-* 🌐 *Time on Website*
-* 📅 *Length of Membership*
+📂 Dataset Description
+Feature	Description
+Average Session Length	Avg time per session
+Time on App	Total time spent on mobile app
+Time on Website	Total time spent on website
+Length of Membership	Years since the user joined
+Yearly Amount Spent	Target variable (customer spending)
 
-These features help us understand **what drives customer expenditure** and how companies can use this to improve marketing strategies, personalize services, and optimize user experience.
+Dataset Source: Kaggle – E-Commerce Customer Behavior Dataset
 
----
+🧠 ML Approach
+✔ Algorithm Used: Linear Regression
 
-## 📂 Dataset
+Simple, explainable, and effective for continuous output prediction.
 
-The dataset includes:
+✔ Steps Performed
 
-| Column Name            | Description                                      |
-| ---------------------- | ------------------------------------------------ |
-| *Avg. Session Length*  | Avg minutes per session                          |
-| *Time on App*          | Minutes spent on mobile app                      |
-| *Time on Website*      | Minutes spent on website                         |
-| *Length of Membership* | Number of years the customer has been associated |
-| *Yearly Amount Spent*  | 💰 Annual customer expenditure                   |
+Data Cleaning & Formatting
 
-This dataset is clean, structured, and excellent for regression experiments.
+Exploratory Data Analysis (EDA)
 
----
+Heatmaps
 
-## 🧠 What This Model Does
+Pair plots
 
-This project applies **Linear Regression** to:
+Correlation analysis
 
-✔ Predict yearly customer spending
-✔ Identify which features influence spending most
-✔ Visualize correlations
-✔ Train, test, and evaluate a machine learning model
-✔ Achieve a strong R² score (model accuracy)
+Feature Selection
 
----
+Train-Test Split
 
-## 🛠 Tech Stack
+Model Training
 
-* **Python 3**
-* **Pandas** → Data manipulation
-* **Matplotlib / Seaborn** → Visualizations
-* **Scikit-Learn** → Machine Learning
-* **Jupyter Notebook / VS Code** → Development
+Metrics Evaluation
 
----
+Insights Extraction
 
-## 📈 Workflow
+📈 Key Insights
 
-### **1️⃣ Importing Libraries**
+Length of Membership is the strongest predictor of spending
 
-Loaded essential ML and visualization libraries.
+Time on App correlates more with spending than Time on Website
 
-### **2️⃣ Loading the Dataset**
+The model gives a high R² score, showing good predictive accuracy
 
-```python
-df = pd.read_csv("data.csv")
-```
+Visualizations reveal clear linear trends in features
 
-### **3️⃣ Exploratory Data Analysis (EDA)**
+🛠 Tech Stack
+Tool	Purpose
+Python	Programming
+Pandas	Data processing
+NumPy	Numerical operations
+Matplotlib / Seaborn	Visualizations
+Scikit-Learn	Machine Learning
+🚀 How to Run the Project
+1️⃣ Clone Repository
+git clone https://github.com/manveer-kaur0/LR-E-Commerce-App.git
 
-* Pairplots
-* Correlation heatmap
-* Feature relationship study
-* Outlier checking
-
-### **4️⃣ Feature Selection**
-
-Selected four key features:
-
-```python
-x = df[['Average Session Length','Time on App','Time on Website','Length of Membership']]
-y = df['Yearly Amount Spent']
-```
-
-### **5️⃣ Train-Test Split**
-
-Model trained on 70% data, tested on 30%.
-
-### **6️⃣ Model Training**
-
-```python
-from sklearn.linear_model import LinearRegression
-lm = LinearRegression()
-lm.fit(x_train, y_train)
-```
-
-### **7️⃣ Model Evaluation**
-
-* Predictions vs Actual comparison
-* Residual analysis
-* R² score
-* Coefficients interpretation
-
----
-
-## 📊 Results & Insights
-
-💡 **Length of Membership** has the highest correlation with spending — loyal users spend more.
-💡 **Time on App** influences spending more than website usage.
-💡 The model effectively captures spending behavior trends.
-
-✔ Achieved a strong predictive performance with good regression metrics.
-
----
-
-## 🧪 How to Run This Project
-
-### **1. Clone the Repository**
-
-```
-git clone https://github.com/your-username/ecommerce-linear-regression.git
-```
-
-### **2. Install Dependencies**
-
-```
+2️⃣ Install Dependencies
 pip install -r requirements.txt
-```
 
-### **3. Run the Code**
+3️⃣ Run the Notebook / Script
 
-Either open the `.ipynb` file in Jupyter Notebook
-**OR** run the python script:
+Open code.ipynb in Jupyter
+OR
 
-```
 python model.py
-```
 
-### **4. View Results**
+📂 Project Structure
+📦 LR-E-Commerce-App
+ ┣ 📜 code.ipynb
+ ┣ 📜 data.csv
+ ┣ 📜 readme.md
+ ┣ 📜 requirements.txt (optional)
+ ┣ 📜 model.py (optional)
 
-Graphs, metrics, and predictions will appear in the console/output window.
+🧪 Model Evaluation
+Metric	Value
+MAE	✔️ Good
+MSE	✔️ Low
+R² Score	⭐ High predictive accuracy
 
----
+(Exact values depend on your latest training run.)
 
-## 📌 Key Learnings
+⭐ Future Enhancements
 
-* How to apply Linear Regression to real-world business data
-* Understanding of feature impact on revenue
-* Data preprocessing and exploratory analysis
-* Model evaluation and interpretation
-* Building a deployable prediction pipeline
+Add Random Forest / XGBoost models
 
----
+Build a Flask / FastAPI API
 
-## ⭐ Future Improvements
+Deploy model on Render / Vercel / Heroku
 
-🔹 Try advanced models (Random Forest, XGBoost)
-🔹 Deploy the model using Flask / FastAPI
-🔹 Add a UI interface
-🔹 Hyperparameter tuning
-🔹 Add cross-validation
+Add a Streamlit web app
 
----
+Add Hyperparameter tuning
 
-## 🤝 Contributing
+🤝 Contributing
 
-Pull requests are welcome!
-Feel free to fork, modify, and expand the project.
-
----
+Pull requests are welcome.
+Feel free to fork the repo and submit improvements.
