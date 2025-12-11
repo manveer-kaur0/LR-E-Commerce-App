@@ -1,121 +1,148 @@
-🛒 E-Commerce Customer Spending Prediction
-⭐ Linear Regression Machine Learning Model · Kaggle Dataset · End-to-End Analysis
-<p align="center"> <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python"/> <img src="https://img.shields.io/badge/Scikit--Learn-ML%20Model-orange?logo=scikitlearn"/> <img src="https://img.shields.io/badge/Status-Completed-brightgreen"/> <img src="https://img.shields.io/badge/License-MIT-yellow"/> <img src="https://img.shields.io/badge/Made%20with-Love-red"/> </p>
-📌 Project Overview
+<img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" width="55" style="border-radius:8px"> E-Commerce Customer Spending Prediction
+Machine Learning · Linear Regression · Kaggle Dataset
+<p align="center"> <img src="https://img.shields.io/badge/Python-3.10+-0A66C2?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Scikit--Learn-ML%20Model-FF6F00?style=for-the-badge&logo=scikitlearn&logoColor=white" /> <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" /> <img src="https://img.shields.io/badge/Status-Completed-28A745?style=for-the-badge" /> </p>
+📌 Project Summary
 
-This project builds a Linear Regression Machine Learning model that predicts Yearly Customer Spending using behavioral data from an e-commerce platform.
+A fully-developed Machine Learning pipeline that predicts Yearly Customer Spending for an e-commerce business.
 
-Using a Kaggle dataset, I performed:
+This project delivers:
 
-📊 Extensive Data Exploration
+▪ Full EDA (plots, correlations, insights)
 
-⚙️ Feature Engineering
+▪ Feature selection & analysis
 
-🤖 Model Training
+▪ Prediction model using Linear Regression
 
-🧪 Evaluation
+▪ Clean notebook with visual storytelling
 
-📉 Insight Generation
+▪ Business insights based on customer behavior
 
-The goal is to understand which user activities drive revenue and build a model capable of accurate predictions.
+▪ Ideal portfolio project for interviews
 
-📂 Dataset Description
-Feature	Description
-Average Session Length	Avg time per session
-Time on App	Total time spent on mobile app
-Time on Website	Total time spent on website
-Length of Membership	Years since the user joined
-Yearly Amount Spent	Target variable (customer spending)
+📦 Dataset Overview
+📁 Columns Explained
 
-Dataset Source: Kaggle – E-Commerce Customer Behavior Dataset
+▪ Average Session Length → Avg browsing time
 
-🧠 ML Approach
-✔ Algorithm Used: Linear Regression
+▪ Time on App → App usage (minutes)
 
-Simple, explainable, and effective for continuous output prediction.
+▪ Time on Website → Web usage (minutes)
 
-✔ Steps Performed
+▪ Length of Membership → Customer loyalty in years
 
-Data Cleaning & Formatting
+▪ Yearly Amount Spent (Target) → Money spent annually
 
-Exploratory Data Analysis (EDA)
+🌐 Source
 
-Heatmaps
+Kaggle – E-Commerce Customer Behavior Dataset
 
-Pair plots
+🎯 Objectives
 
-Correlation analysis
+This project focuses on:
 
-Feature Selection
+▪ Identifying revenue-driving behaviors
 
-Train-Test Split
+▪ Comparing app usage vs website usage
 
-Model Training
+▪ Building a predictive regression model
 
-Metrics Evaluation
+▪ Demonstrating ML workflow end-to-end
 
-Insights Extraction
+▪ Extracting business-ready insights
 
-📈 Key Insights
+🚀 Key Features
 
-Length of Membership is the strongest predictor of spending
+▪ Clean & structured code
 
-Time on App correlates more with spending than Time on Website
+▪ Multiple visualizations (heatmaps, pairplots, regressions)
 
-The model gives a high R² score, showing good predictive accuracy
+▪ Intuitive feature correlations
 
-Visualizations reveal clear linear trends in features
+▪ Linear Regression model (+ metrics)
 
-🛠 Tech Stack
-Tool	Purpose
-Python	Programming
-Pandas	Data processing
-NumPy	Numerical operations
-Matplotlib / Seaborn	Visualizations
-Scikit-Learn	Machine Learning
-🚀 How to Run the Project
-1️⃣ Clone Repository
-git clone https://github.com/manveer-kaur0/LR-E-Commerce-App.git
+▪ Easy-to-run and beginner-friendly
 
-2️⃣ Install Dependencies
-pip install -r requirements.txt
+▪ High-quality graphs for presentations
 
-3️⃣ Run the Notebook / Script
+📊 Insights & Findings
+⭐ Strongest Predictors
 
-Open code.ipynb in Jupyter
-OR
+▪ Length of Membership → strongest impact
 
-python model.py
+▪ Time on App → better predictor than website
 
-📂 Project Structure
+⚠️ Weaker Indicators
+
+▪ Time on Website → low correlation
+
+📈 Performance
+
+▪ High R² Score
+
+▪ Clean error distribution
+
+▪ Accurate prediction curve
+
+🧠 Modeling Workflow
+
+▪ Data import & cleaning
+
+▪ EDA & visualization
+
+▪ Train-test split
+
+▪ Linear Regression training
+
+▪ Evaluation metrics
+
+▪ Coefficient analysis
+
+🛠 Tech Stack Used
+
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width="45" /> Python
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" width="45" /> Pandas
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968553.png" width="45" /> NumPy
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968525.png" width="45" /> Matplotlib
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968540.png" width="45" /> Seaborn
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968530.png" width="45" /> Scikit-Learn
+
+(All icons are large, square, and uniform.)
+
+📂 Folder Structure
 📦 LR-E-Commerce-App
  ┣ 📜 code.ipynb
  ┣ 📜 data.csv
  ┣ 📜 readme.md
- ┣ 📜 requirements.txt (optional)
- ┣ 📜 model.py (optional)
+ ┣ 📜 requirements.txt
+ ┗ 📜 model.py (optional)
 
-🧪 Model Evaluation
-Metric	Value
-MAE	✔️ Good
-MSE	✔️ Low
-R² Score	⭐ High predictive accuracy
+🧪 How To Run
+1️⃣ Clone the repository
+git clone https://github.com/manveer-kaur0/LR-E-Commerce-App.git
 
-(Exact values depend on your latest training run.)
+2️⃣ Install dependencies
+pip install -r requirements.txt
 
-⭐ Future Enhancements
+3️⃣ Run the notebook
+jupyter notebook code.ipynb
 
-Add Random Forest / XGBoost models
 
-Build a Flask / FastAPI API
+OR run the script:
 
-Deploy model on Render / Vercel / Heroku
+python model.py
 
-Add a Streamlit web app
+🚀 Future Improvements
 
-Add Hyperparameter tuning
+▪ Add Random Forest / XGBoost for comparison
 
-🤝 Contributing
+▪ Build a Streamlit dashboard
 
-Pull requests are welcome.
-Feel free to fork the repo and submit improvements.
+▪ Create a Flask/FastAPI backend
+
+▪ Add automated hyperparameter tuning
+
+▪ Deploy online
+
+✨ Author
+
+Manveer Kaur
